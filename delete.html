@@ -1,0 +1,9 @@
+<div ng-controller="deleteCtrl">
+    <h3>DELETE</h3>
+    <form ng-submit="delete()">
+        <select name="delId" id="delId" ng-options="x.Emp_ID for x in data" ng-model="Emp_ID">
+            <option value="#" selected>Choose ID</option>
+        </select>
+        <button type="submit">Delete</button>
+    </form>
+</div>

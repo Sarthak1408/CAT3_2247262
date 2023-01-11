@@ -1,0 +1,20 @@
+<table ng-controller="viewCtrl">
+    <thead>
+        <th>Employee ID</th>
+        <th>Employee Name</th>
+        <th>Employee Designation</th>
+        <th>Employee Department</th>
+        <th>Employee Salary</th>
+        <th>Employee Location</th>
+    </thead>
+    <tbody>
+        <tr ng-repeat="x in data | filter: test">
+            <td>{{x.Emp_ID}}</td>
+            <td>{{x.Emp_name}}</td>
+            <td>{{x.Emp_Designation}}</td>
+            <td>{{x.Emp_Deparment}}</td>
+            <td>{{x.Emp_Salary}}</td>
+            <td>{{x.Emp_Location}}</td>
+        </tr>
+    </tbody>
+</table>

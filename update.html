@@ -1,0 +1,16 @@
+<div ng-controller="updateCtrl">
+    <h3>Updation</h3>
+    <div>
+        <form ng-submit="update()">
+            <select name="fId" id="fId" ng-options="x.Emp_ID for x in datas" ng-model="Emp_ID" ng-change="getId()">
+                <option value="#" selected>Choose ID</option>
+            </select><br>
+            <input type="text" name="Emp_name" ng-model="Emp_name"><br>
+            <input type="text" name="Emp_Designation" ng-model="Emp_Designation"><br>
+            <input type="text" name="Emp_Deparment" ng-model="Emp_Deparment"><br>
+            <input type="text" name="Emp_Salary" ng-model="Emp_Salary"><br>
+            <input type="text" name="Emp_Location" ng-model="Emp_Location"><br>
+            <button type="submit">Update</button>
+        </form>
+    </div>
+</div>
